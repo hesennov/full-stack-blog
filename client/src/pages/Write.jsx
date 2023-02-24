@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const Write = () => {
   const [value, setValue] = useState("");
-  // console.log(value);
+  console.log(value);
   return (
     <div className="add">
       <div className="content">

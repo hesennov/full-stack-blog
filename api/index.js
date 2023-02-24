@@ -2,10 +2,11 @@ import express from "express";
 import authRoutes from "./routes/auth.js";
 import userRoutes from "./routes/users.js";
 import postsRoutes from "./routes/posts.js";
-
+import cors from "cors";
 // const userRoutes = require("./routes/user")
 
 const app = express();
+app.use(cors());
 
 app.use(express.json());
 app.use("/api/posts", postsRoutes);
